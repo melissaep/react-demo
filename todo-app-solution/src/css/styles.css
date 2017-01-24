@@ -1,0 +1,86 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#main {
+	max-width: 700px;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 50px auto;
+	padding: 20px 30px;
+}
+
+h1 {
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background: lightgrey;
+}
+
+div.Count {
+	text-align: center;
+}
+
+
+ul.ToDoList {
+	margin: 30px 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.ToDoList li {
+	border-bottom: 1px dotted grey;
+	position: relative;
+}
+
+ul.ToDoList li:last-of-type {
+	border-bottom: none;
+}
+
+li span.name{
+	display: inline-block;
+}
+
+li input[type=checkbox] {
+	width: 5%;
+}
+
+li input:checked + span.name{
+	color: grey;
+	text-decoration: line-through;
+}
+
+li button {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+}
+
+input[type=text] {
+	width: calc(90%);
+	height: 30px;
+	padding: 10px;
+}
+
+button[type=submit] {
+	height: 30px;
+	width: 10%;
+}
+
+form.AddTodo {
+	margin: 0 auto;
+}
+
+button:hover {
+	background: darkgrey;
+}
